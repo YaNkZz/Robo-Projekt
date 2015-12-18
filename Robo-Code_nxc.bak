@@ -1,6 +1,6 @@
 
-#define BLACK 40
-#define WHITE 41
+#define BLACK 49
+#define WHITE 40
 
 task main()
 {
@@ -12,18 +12,18 @@ task main()
         int light_value_r = Sensor(IN_2);
         NumOut(45, 30, light_value_l);
         NumOut(0, 0, light_value_r);
-        if (light_value_l <= BLACK && light_value_r <= BLACK)
+        if (light_value_l >= WHITE && light_value_r >= WHITE)
         {
-            OnFwd(OUT_BC, 20);
+            OnFwd(OUT_BC, 75);
         } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
-            OnFwd(OUT_C, 20);
+            OnFwd(OUT_C, 40);
             Off(OUT_B);
         } else if (light_value_l <= BLACK && light_value_r >= WHITE) {
-            OnFwd(OUT_B, 20);
+            OnFwd(OUT_B, 40);
             Off(OUT_C);
         } else {
-            Off(OUT_BC);
-            break;
+            OnFwd(OUT_BC, 75);
         }
     }
 }
+
