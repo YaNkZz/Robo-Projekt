@@ -1,0 +1,14 @@
+//this is only the first part of the robo in which it turns.
+// I think out C is right; out B should be left
+
+
+#define turn_time 1320
+
+task main()
+{
+     Wait(2000);
+     OnFwd(OUT_B, 30);  //(B should be left wheel)
+     OnRev(OUT_C, 30);
+     Wait(turn_time);
+     Off(OUT_BC);
+}
