@@ -8,11 +8,11 @@ task main()
 {
     SetSensorLight(IN_2);
     SetSensorLight(IN_3);
+    int light_value_l = Sensor(IN_3);
+    int light_value_r = Sensor(IN_2);
+
     while(true)
-    {
-        int light_value_l = Sensor(IN_3);
-        int light_value_r = Sensor(IN_2);
-        NumOut(45, 30, light_value_l);
+    {   NumOut(45, 30, light_value_l);
         NumOut(0, 0, light_value_r);
 
         while (light_value_l <= WHITE)
@@ -21,9 +21,9 @@ task main()
         }
         while (light_value_l >= BLACK){
             OnFwd(OUT_B, 40);
-            OnRev(OUT_C, 40;
+            OnRev(OUT_C, 40);
         }
-
+       break;
     }
 }
 
