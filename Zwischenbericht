@@ -1,0 +1,81 @@
+System Design Project
+Zwischenbericht WS 2015/2016
+
+Gruppe #14 Der Fühlende Ψ-Bot
+Yannik.Rieder@gmx.de
+
+03. Januar 2016
+
+1. Gruppenmitglieder
+
+
+
+
+2. Roboterkonzept
+
+
+
+
+3. Softwarekonzept
+
+
+
+
+4. Fortschritt
+
+Beim ersten Meilenstein-Treffen fährt der Roboter die schwarze Linie zuverlässig ab. Hierbei wurde nur ein Lichtsensor verwendet, damit der Roboter immer nur mit dem Sensor auf der schwarzen Linie fährt. Um eine reibungslosere Fahrt zu gewährleisten, haben wir uns dazu entschieden, zwei Lichtsensoren zu verwenden und den Code umzuschreiben. 
+
+
+5. Fehleranalyse
+
+Der NXT-Computer wurde zuerst über die NXT-Software von Lego programmiert. Theoretisch hätte der Line-Follow-Code funktionieren sollen, so dass der Roboter der schwarzen Linie folgt. Aus unerklärlichen Gründen tat er dies nicht, trotz verschiedener Programmierungscodes. Deshalb haben wir die Software durch Not-Exactly-C ausgetauscht. Mit dieser funktioniert das Verfolgen der Linie beim ersten Versuch. 
+Beim ersten Versuch auf der Test-Strecke zeigen sich einige Probleme, da der Roboter bisher nur zur Verfolgung der schwarzen Linie programmiert wurde. Bei der Abfahrt verlieren die Lichtsensoren den Kontakt zur schwarzen Linie und der Roboter kippt nach vorne über. Bei der Auffahrt erreicht der Roboter nur die Hälfte und die Reifen drehen durch. 
+
+
+6. Weiteres Vorgehen
+
+
+
+
+7. Arbeitsteilung
+
+Alle Mitglieder haben das Projekt zusammen bearbeitet. Der Roboter wurde teilweise von allen zusammengebaut und der Code zusammen oder über GitHub geschrieben.
+
+
+
+2. Roboterkonzept
+
+Optional:  Einleitend  konnen  Sie das Grundkonzept des Roboters  beschrei- ben, und wie Sie vorhaben,  die Aufgabe zu losen. Dies kann gerne mit einem Foto  illustriert werden.
+
+
+3. Softwarekonzept
+
+Optional:   Hier  konnen  Sie beschreiben,  wie Sie die  Programmierung  des
+Roboters  umgesetzt  haben,  z.B. durch  angewandte Designpatterns.
+
+
+4. Fortschritt
+
+Pflicht:  Sie sollten  den aktuellen  Stand  des Projekts beschreiben,  z.B. wie die Erkennung beim Meilenstein  funktioniert hat,
+
+
+5. Fehleranalyse
+
+Optional:  Falls es beim Fortschritt noch nicht viel zu berichten  gibt, konnen
+Sie darauf  eingehen, was bisher noch Probleme  gemacht hat.
+
+6. Weiteres Vorgehen
+
+Optional:  Hier konnen Sie beschreiben, welche Teile des Systems noch fehlen. Falls es noch Probleme  gibt, konnen Sie auf Ideen zur Losung eingehen; falls nicht,  auf generelle Ideen zur weiteren  Verbesserung  des Systems.
+
+7. Arbeitsteilung
+
+Pflicht:  Beschreiben  Sie kurz,  ob und  wie die Arbeit  innerhalb der Gruppe aufgeteilt  war. Teilen Sie uns insbesondere  mit, falls derzeit noch registrierte Teilnehmer  nicht mehr auftauchen oder ausgeschieden  sind.
+
+
+
+
+
+
+
+
