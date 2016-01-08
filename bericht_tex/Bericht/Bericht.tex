@@ -1,19 +1,32 @@
-System Design Project
-Zwischenbericht WS 2015/2016
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{german}
+\usepackage{xcolor}
+\usepackage{amsmath}
 
-Gruppe #14 Der Fühlende Ψ-Bot
+\newcommand{\todo}[1]{\textcolor{black}{#1}}
 
+\title{
+  \Huge System Design Project \\
+  \LARGE Zwischenbericht WS 2015/2016
+}
+\author{
+  \Large \todo{Der fühlende Psi Bot \#14}\\
+}
 
-03. Januar 2016
+\begin{document}
+\maketitle
 
-1. Gruppenmitglieder
+\section{Gruppenmitglieder}
+\begin{itemize}
+  \item {Rob Falkenstein (3530252) rob.falkenstein@freenet.de}
+	\item	{Yannik Rieder (??????) yannik.rieder@gmx.de}
+	\item	{Fritz Gebhardt (??????)}
+	\item	{Moritz Schiltenwolf (??????)}
+\end{itemize}
 
-Yannik Rieder () Yannik.Rieder@gmx.de
-Rob Falkenstein (3530252) rob.falkenstein@freenet.de
-Fritz Gebhardt ()
-Moritz Schiltenwolf ()
+\section{Roboterkonzept}
 
-2. Roboterkonzept
 Bis zum Meilenstein bestand unser Grundkonzept darin, uns an die LEGO-Anleitung zu halten, um ein Grundgerüst zum Testen zu haben. 
 An der Bahn merkten wir aber schnell, dass dies nicht genug sein würde. Deshalb wechselten wir die Räder aus, um eine höhere Stabilität 
 gegenüber der Bodenwellen zu erreichen. Dies stellte sich als gut Idee heraus, da er nun problemlos über die Bodenwellen fahren konnte.
@@ -25,8 +38,8 @@ aber nicht auf den Bodenwellen oder an den Steigungen am Boden aufliegen.
 In Bezug auf die Fortbewegung werden wir uns weiterhin an recht großen Rädern orientieren, da diese ein hohes Maß an Winderstandsfähigkeit
 gegenüber der Bodenwellen angezeigt haben.
 
+\section{Softwarekonzept}
 
-3. Softwarekonzept
 Für das Softwarekonzept haben wir uns an den Tipp von Professor Leo Reindl gehalten. Die zentralen Parameter wurden an den Anfang des
 NXC-Codes ausgelagert und der Code in deren Folge entwickelt. Grundlegende Parameter sind bisher die Schwellenwerte für die Farberkennung
 sowie zentrale Geschwindigkeitsindizes. Unser momentaner Stand sind mehrere Codes, einmal zum Umdrehen, dann einen zum Greifen, einen zum Ablegen
@@ -35,9 +48,7 @@ Probleme bereiten wird; die Einzelerstellung der notwendigen Code-Teile hat für
 Daneben versuchen wir, den Code möglichst ausführlich zu kommentieren, damit die anderen Teammitglieder keine Probleme haben, gemachte und 
 in GitHub hochgeladenen Veränderungen nachvollziehen zu können. 
 
-
-
-4. Fortschritt
+\section{Fortschritt}
 
 Am Ende des ersten Meilenstein-Treffen fährt der Roboter die schwarze Linie zuverlässig ab. Anfangs wurden zwei Lichtsensoren verwendet, 
 die zentral und nah beieinander lagen, damit der Roboter bei Abweichen von der schwarzen Linie diesen Weg korrigieren konnte. 
@@ -45,8 +56,7 @@ Da dies bei den Bodenwellen aber starke Probleme verursachte, entschieden wir un
 platzieren und den Code zu ändern. Dadurch hatte der Roboter keine Probleme mehr, der schwarzen Linie zu folgen, da nur im Falle des Abweichens
 vom weißen Randmuster eine Korrektur vorgenommen wurde.  
 
-
-5. Fehleranalyse
+\section{Fehleranalyse}
 
 Anfangs wurde der NXT-Computer über die NXT-Software von Lego programmiert. Theoretisch hätte der Line-Follow-Code funktionieren sollen, 
 so dass der Roboter der schwarzen Linie folgt. Aus unerklärlichen Gründen tat er dies trotz verschiedener Programmierungscodes nicht. 
@@ -58,8 +68,7 @@ Diesen Problemen wollen wir zuallererst durch den neuen Schwerpunkt des Roboters
 die Bahn zufriedenstellend abfahren kann. Sollte dies nicht der Fall sein, werden wir angewiesen sein, Räder mit einer höheren Haftreibung
 am Robo anzubringen. Dies wird sich in den kommenden Sitzungen herausstellen.  
 
-
-6. Weiteres Vorgehen
+\section{Weiteres Vorgehen}
 
 Die Programmiercodes für das Fahren und das Drehen funktionieren bisher ziemlich gut. Wenn wir den Roboter umbauen, müssen wir uns 
 an der Höhe des Balles orientieren, um den Greifarm richtig einzusetzen. Dieser wird an den dritten Motor angeschlossen werden. 
@@ -67,40 +76,10 @@ Wie das codetechnisch funktionieren soll, haben wir noch nicht ganz geklärt. Es
 benutzen müssen, um dem Greifarm anzuzeigen, wann dieser schließen soll. 
 
 
-7. Arbeitsteilung
+\section{Arbeitsteilung}
 
 Alle Mitglieder haben das Projekt zusammen bearbeitet. Beim bisherigen Zusammenbau lieferte jedes der Mitglieder seinen Teil. 
 Der Code wurde bisher entweder über GitHub per SVN geteilt und bearbeitet oder von den an der Testbahn anwesenden Testern 
 geändert.
 
-
-______________________________________________________________________________________________________________________________________
-Inhalt
-
-Roboterkonzept
-Optional:  Einleitend  konnen  Sie das Grundkonzept des Roboters  beschrei- ben, und wie Sie vorhaben,  die Aufgabe zu losen. Dies kann gerne mit einem Foto  illustriert werden.
-
-Softwarekonzept
-Optional:   Hier  konnen  Sie beschreiben,  wie Sie die  Programmierung  des
-Roboters  umgesetzt  haben,  z.B. durch  angewandte Designpatterns.
-
-Fortschritt
-Pflicht:  Sie sollten  den aktuellen  Stand  des Projekts beschreiben,  z.B. wie die Erkennung beim Meilenstein  funktioniert hat,
-
-Fehleranalyse
-Optional:  Falls es beim Fortschritt noch nicht viel zu berichten  gibt, konnen
-Sie darauf  eingehen, was bisher noch Probleme  gemacht hat.
-
-Weiteres Vorgehen
-Optional:  Hier konnen Sie beschreiben, welche Teile des Systems noch fehlen. Falls es noch Probleme  gibt, konnen Sie auf Ideen zur Losung eingehen; falls nicht,  auf generelle Ideen zur weiteren  Verbesserung  des Systems.
-
-Arbeitsteilung
-Pflicht:  Beschreiben  Sie kurz,  ob und  wie die Arbeit  innerhalb der Gruppe aufgeteilt  war. Teilen Sie uns insbesondere  mit, falls derzeit noch registrierte Teilnehmer  nicht mehr auftauchen oder ausgeschieden  sind.
-
-
-
-
-
-
-
-
+\end{document}
