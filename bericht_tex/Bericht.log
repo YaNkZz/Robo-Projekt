@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.14)  8 JAN 2016 16:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.6.14)  9 JAN 2016 15:14
 entering extended mode
 **Bericht.tex
-("C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\bericht_tex\Bericht\Bericht.tex"
+("C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\bericht_tex\Bericht.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, arabic, armenian, assamese, basque, bengali
 , bokmal, bulgarian, catalan, coptic, croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, galic
@@ -334,7 +334,7 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\bericht_tex\Bericht\Bericht.aux")
+("C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\bericht_tex\Bericht.aux")
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
 LaTeX Font Info:    ... okay on input line 17.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
@@ -370,22 +370,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
  [1
 
-{C:/Users/Rob/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3]
-("C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\bericht_tex\Bericht\Bericht.aux") ) 
+{C:/Users/Rob/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2] [3] ("C:\Uni Freiburg Informatik\System Design Pro
+ject\robo-projekt\trunk\bericht_tex\Bericht.aux") ) 
 Here is how much of TeX's memory you used:
  2395 strings out of 493921
- 28748 string characters out of 3144882
+ 28692 string characters out of 3144882
  92584 words of memory out of 3000000
  5700 multiletter control sequences out of 15000+200000
  8810 words of font info for 32 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  27i,7n,35p,218b,240s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Fil
-es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsf
-onts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
-10.pfb>
-Output written on Bericht.pdf (3 pages, 78078 bytes).
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on Bericht.pdf (3 pages, 78428 bytes).
 PDF statistics:
  32 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
