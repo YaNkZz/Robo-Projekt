@@ -6,14 +6,19 @@ Gruppe #14 Der Fühlende Ψ-Bot
 
 03. Januar 2016
 
+
+
 1. Gruppenmitglieder
 
 Yannik Rieder () Yannik.Rieder@gmx.de
 Rob Falkenstein (3530252) rob.falkenstein@freenet.de
 Fritz Gebhardt (4137115) fg@klige.de
-Moritz Schiltenwolf ()
+Moritz Schiltenwolf (3803354) moritz.schiwo@gmail.com
+
+
 
 2. Roboterkonzept
+
 Bis zum Meilenstein bestand unser Grundkonzept darin, uns an die LEGO-Anleitung zu halten, um ein Grundgerüst zum Testen zu haben. 
 An der Bahn merkten wir aber schnell, dass dies nicht genug sein würde. Deshalb wechselten wir die Räder aus, um eine höhere Stabilität 
 gegenüber der Bodenwellen zu erreichen. Dies stellte sich als gut Idee heraus, da er nun problemlos über die Bodenwellen fahren konnte.
@@ -24,9 +29,17 @@ einzubauen. Dabei gibt es zwei Dinge zu beachten: Der Robo sollte auf der einen 
 aber nicht auf den Bodenwellen oder an den Steigungen am Boden aufliegen. 
 In Bezug auf die Fortbewegung werden wir uns weiterhin an recht großen Rädern orientieren, da diese ein hohes Maß an Winderstandsfähigkeit
 gegenüber der Bodenwellen angezeigt haben.
+Des weiteren ist uns bei den ersten Fahrten mit dem Roboter aufgefallen, dass es ungünstig ist die Lichtsensoren, wie ursprünglich geplant, 
+eher mittig anzubringen, so dass sie bei einem Wechsel von Schwarz zu Weiß reagierten. Bei dieser Bauweise hatte der Roboter in den Kurven 
+teilweise Probleme, was eventuell an einer zu hohen Latenzzeit des Rechners liegen könnte. Um das Problem zu beheben haben wir die Sensoren
+nach außen verschoben und den sich auf diese Sensoren Code quasi invertiert, so dass nun beim Wechsel von Weiß zu Schwarz reagiert wird.  
+Wir haben uns bisher nur konzeptuell Gedanken darüber gemacht, wie der Roboter den Ball aufnehmen, tragen und wieder ablegen soll, da wir es für
+sinnvoll erachtet haben, zunächst die grundlegenden Bewegungsmechanismen zu bauen und zu programmieren.
+
 
 
 3. Softwarekonzept
+
 Für das Softwarekonzept haben wir uns an den Tipp von Professor Leo Reindl gehalten. Die zentralen Parameter wurden an den Anfang des
 NXC-Codes ausgelagert und der Code in deren Folge entwickelt. Grundlegende Parameter sind bisher die Schwellenwerte für die Farberkennung
 sowie zentrale Geschwindigkeitsindizes. Unser momentaner Stand sind mehrere Codes, einmal zum Umdrehen, dann einen zum Greifen, einen zum Ablegen
@@ -41,9 +54,10 @@ in GitHub hochgeladenen Veränderungen nachvollziehen zu können.
 
 Am Ende des ersten Meilenstein-Treffen fährt der Roboter die schwarze Linie zuverlässig ab. Anfangs wurden zwei Lichtsensoren verwendet, 
 die zentral und nah beieinander lagen, damit der Roboter bei Abweichen von der schwarzen Linie diesen Weg korrigieren konnte. 
-Da dies bei den Bodenwellen aber starke Probleme verursachte, entschieden wir uns dazu, die beiden Lichtsensoren weiter auseinander zu 
-platzieren und den Code zu ändern. Dadurch hatte der Roboter keine Probleme mehr, der schwarzen Linie zu folgen, da nur im Falle des Abweichens
-vom weißen Randmuster eine Korrektur vorgenommen wurde.  
+Da dies bei den Bodenwellen und manchen Kurven aber starke Probleme verursachte, entschieden wir uns dazu, die beiden Lichtsensoren weiter
+auseinander zu platzieren und den Code zu ändern. Dadurch hatte der Roboter keine Probleme mehr, der schwarzen Linie zu folgen, da nur im 
+Falle des Abweichens vom weißen Randmuster eine Korrektur vorgenommen wurde.  
+
 
 
 5. Fehleranalyse
@@ -59,12 +73,14 @@ die Bahn zufriedenstellend abfahren kann. Sollte dies nicht der Fall sein, werde
 am Robo anzubringen. Dies wird sich in den kommenden Sitzungen herausstellen.  
 
 
+
 6. Weiteres Vorgehen
 
 Die Programmiercodes für das Fahren und das Drehen funktionieren bisher ziemlich gut. Wenn wir den Roboter umbauen, müssen wir uns 
 an der Höhe des Balles orientieren, um den Greifarm richtig einzusetzen. Dieser wird an den dritten Motor angeschlossen werden. 
 Wie das codetechnisch funktionieren soll, haben wir noch nicht ganz geklärt. Es ist jedoch klar, dass wir den Berührungssensor 
 benutzen müssen, um dem Greifarm anzuzeigen, wann dieser schließen soll. 
+
 
 
 7. Arbeitsteilung
