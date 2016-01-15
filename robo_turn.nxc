@@ -2,8 +2,6 @@
 // I think out C is right; out B should be left
 
 
-#define turn_time 1320
-
 task main()
 {
      Wait(2000);
