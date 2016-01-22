@@ -1,7 +1,8 @@
 
-#define BLACK 41
-#define WHITE 40
+#define BLACK 36
+#define WHITE 37
 
+/* Wheels in turns are on 60 */
 task main()
 {
     SetSensorLight(IN_2);
@@ -14,15 +15,15 @@ task main()
         NumOut(0, 0, light_value_r);
         if (light_value_l >= WHITE && light_value_r >= WHITE)
         {
-            OnFwd(OUT_BC, 75);
+            OnFwd(OUT_BC, 85);
         } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
-            OnFwd(OUT_C, 60);
+            OnFwd(OUT_C, 70);
             Off(OUT_B);
         } else if (light_value_l <= BLACK && light_value_r >= WHITE) {
-            OnFwd(OUT_B, 60);
+            OnFwd(OUT_B, 70);
             Off(OUT_C);
         } else {
-            OnFwd(OUT_BC, 75);
+            OnFwd(OUT_BC, 85);
         }
     }
 }

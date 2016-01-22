@@ -1,6 +1,6 @@
 
-#define BLACK 41
-#define WHITE 40
+#define BLACK 36
+#define WHITE 37
 
 task main()
 {
@@ -14,15 +14,15 @@ task main()
         NumOut(0, 0, light_value_r);
         if (light_value_l >= WHITE && light_value_r >= WHITE)
         {
-            OnFwd(OUT_BC, 75);
+            OnFwd(OUT_BC, 85);
         } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
-            OnFwd(OUT_C, 50);
+            OnFwd(OUT_C, 60);
             Off(OUT_B);
         } else if (light_value_l <= BLACK && light_value_r >= WHITE) {
-            OnFwd(OUT_B, 50);
+            OnFwd(OUT_B, 60);
             Off(OUT_C);
         } else {
-            OnFwd(OUT_BC, 75);
+            OnFwd(OUT_BC, 85);
         }
     }
 }
