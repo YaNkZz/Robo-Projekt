@@ -1,0 +1,315 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0SetSensorLight_inline_main	6	1	0	4	4
+1	__D0main	6	1	4	4	42
+2	__DU0SetSensorLight_inline_main	5	1	8	4	10
+3	__signed_stack_002main	6	1	12	4	4
+4	__signed_stack_001main	6	1	16	4	16
+5	__main_7qG2_light_value_r_7qG2_001	4	1	20	2	5
+6	__main_7qG2_light_value_l_7qG2_001	4	1	22	2	5
+7	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	24	1	4
+8	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	25	1	4
+9	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	26	1	4
+10	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	27	1	10
+11	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	28	1	4
+12	__constVal96	2	0	29	1	6
+13	__constVal63	2	0	30	1	6
+14	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	31	1	4
+15	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	32	1	2
+16	____initialize_global_data_return	1	1	33	1	3
+17	__constVal2	2	0	34	1	3
+18	__PFTmp	1	1	35	1	1
+19	____ResetSensorSubroutine_return	1	1	36	1	4
+20	__ResetSensorPort	1	1	37	1	4
+21	__ResetSensorTmp	1	1	38	1	2
+22	__constVal32	2	0	39	1	18
+23	__constVal1	2	0	40	1	6
+24	__constVal3	2	0	41	1	6
+25	__constVal0	2	1	42	1	20
+26	__TextOutArgs	8	0	4	16	12
+27	__TextOutArgs.Result	2	1	44	1	12
+28	__TextOutArgs.Location	8	0	2	4	12
+29	__TextOutArgs.Location.X	4	1	48	2	12
+30	__TextOutArgs.Location.Y	4	1	50	2	12
+31	__TextOutArgs.Text	7	0	52	4	12
+32	__TextOutArgs.Text.Text_type	1	0	0	1	0
+33	__TextOutArgs.Options	5	1	56	4	12
+34	__OUT_BC	7	0	60	4	2
+35	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	7	0	#line 7 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	8	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	7	2	#line 7 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	7	2	#line 7 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	8	2		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	7	5	#line 7 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	8	5	#line 8 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	9	5		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	7	#line 4313 "NXCDefs.h"
+0	4314	7		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4313	9	#line 4313 "NXCDefs.h"
+0	4314	9		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	11	#line 4313 "NXCDefs.h"
+0	4314	11		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	14	#line 4313 "NXCDefs.h"
+0	4314	14		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	17	#line 4313 "NXCDefs.h"
+0	4314	17		set __DU0SetSensorLight_inline_main, 5
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4313	20	#line 4313 "NXCDefs.h"
+0	4314	20		jmp __001__ASM_Label_5
+0	4313	22	#line 4313 "NXCDefs.h"
+0	4314	22		set __DU0SetSensorLight_inline_main, 6
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4313	25	#line 4313 "NXCDefs.h"
+0	4314	25		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	27	#line 4247 "NXCDefs.h"
+0	4248	27		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	31	#line 4247 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4314	31	#line 4314 "NXCDefs.h"
+0	4315	31		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4314	33	#line 4314 "NXCDefs.h"
+0	4315	33		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	36	#line 4314 "NXCDefs.h"
+0	4260	36	#line 4260 "NXCDefs.h"
+0	4261	36		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	40	#line 4260 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4315	40	#line 4315 "NXCDefs.h"
+0	4316	40		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	42	#line 4315 "NXCDefs.h"
+0	4278	42	#line 4278 "NXCDefs.h"
+0	4279	42	#pragma macro 4
+0	4279	42		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	44		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3614	46	#line 3614 "NXCDefs.h"
+0	4278	46	#line 4278 "NXCDefs.h"
+0	4316	46	#line 4316 "NXCDefs.h"
+0	8	46	#line 8 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	8	46	#line 8 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	9	46		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	8	49	#line 8 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	9	49	#line 9 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	10	49		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	51	#line 4313 "NXCDefs.h"
+0	4314	51		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	53	#line 4313 "NXCDefs.h"
+0	4313	53	#line 4313 "NXCDefs.h"
+0	4314	53		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	55	#line 4313 "NXCDefs.h"
+0	4314	55		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	58	#line 4313 "NXCDefs.h"
+0	4314	58		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	61	#line 4313 "NXCDefs.h"
+0	4314	61		set __DU0SetSensorLight_inline_main, 5
+0	4313	64	#line 4313 "NXCDefs.h"
+0	4313	64	#line 4313 "NXCDefs.h"
+0	4314	64		jmp __002__ASM_Label_5
+0	4313	66	#line 4313 "NXCDefs.h"
+0	4314	66		set __DU0SetSensorLight_inline_main, 6
+0	4313	69	#line 4313 "NXCDefs.h"
+0	4313	69	#line 4313 "NXCDefs.h"
+0	4314	69		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	71	#line 4247 "NXCDefs.h"
+0	4248	71		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	75	#line 4247 "NXCDefs.h"
+0	4314	75	#line 4314 "NXCDefs.h"
+0	4314	75	#line 4314 "NXCDefs.h"
+0	4315	75		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	77	#line 4314 "NXCDefs.h"
+0	4314	77	#line 4314 "NXCDefs.h"
+0	4315	77		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	80	#line 4314 "NXCDefs.h"
+0	4260	80	#line 4260 "NXCDefs.h"
+0	4261	80		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	84	#line 4260 "NXCDefs.h"
+0	4315	84	#line 4315 "NXCDefs.h"
+0	4315	84	#line 4315 "NXCDefs.h"
+0	4316	84		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	86	#line 4315 "NXCDefs.h"
+0	4278	86	#line 4278 "NXCDefs.h"
+0	4279	86	#pragma macro 4
+0	4279	86		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	88		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3677	90	#line 3677 "NXCDefs.h"
+0	4278	90	#line 4278 "NXCDefs.h"
+0	4316	90	#line 4316 "NXCDefs.h"
+0	9	90	#line 9 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	10	90	#line 10 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	11	90		set __D0main, 1
+0	11	93	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	12	93		tst 5, __D0main, __D0main
+0	11	96	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	12	96		brtst 4, __ASM_Label_494, __D0main
+0	11	99	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	12	99		getin __main_7qG2_light_value_l_7qG2_001, __constVal2, 4
+0	11	103	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	12	103	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	13	103		getin __main_7qG2_light_value_r_7qG2_001, __constVal1, 4
+0	12	107	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	13	107	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	107		set __signed_stack_001main, 45
+0	13	110	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	13	110	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	110		set __signed_stack_002main, 30
+0	13	113	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	13	113	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	113		mov __D0main, __main_7qG2_light_value_l_7qG2_001
+0	14	115	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	115	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	115		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	14	117	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	117		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	14	119	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	119		set __TextOutArgs.Options, 0
+0	14	122	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	122		numtostr __TextOutArgs.Text, __D0main
+0	14	125	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	125		syscall 13, __TextOutArgs
+0	14	128	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	128		mov __D0main, __TextOutArgs.Result
+0	14	130	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	130	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	130	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	130		set __signed_stack_001main, 0
+0	14	133	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	133	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	133		set __signed_stack_002main, 0
+0	14	136	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	14	136	#line 14 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	136		mov __D0main, __main_7qG2_light_value_r_7qG2_001
+0	15	138	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	138	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	138		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	15	140	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	140		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	15	142	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	142		set __TextOutArgs.Options, 0
+0	15	145	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	145		numtostr __TextOutArgs.Text, __D0main
+0	15	148	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	148		syscall 13, __TextOutArgs
+0	15	151	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	151		mov __D0main, __TextOutArgs.Result
+0	15	153	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	153	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	153	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	153		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	15	155	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	15	155	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	155		set __D0main, 37
+0	15	158	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	158		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	15	162	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	162		brtst 4, __ASM_Label_514, __D0main
+0	15	165	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	165		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	15	167	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	16	167	#line 16 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	17	167		set __D0main, 37
+0	16	170	#line 16 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	17	170		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	17	174	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	18	174		brtst 4, __ASM_Label_515, __D0main
+0	17	177	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	18	177		set __D0main, 85
+0	18	180	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	180	#pragma macro 7
+0	19	180		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3803	203	#line 3803 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	18	203	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	18	203	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	203		jmp __ASM_Label_518
+0	18	205	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	205		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	18	207	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	18	207	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	207		set __D0main, 37
+0	18	210	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	210		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	18	214	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	214		brtst 4, __ASM_Label_520, __D0main
+0	18	217	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	217		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	18	219	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	18	219	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	219		set __D0main, 36
+0	18	222	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	19	222		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	19	226	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	20	226		brtst 4, __ASM_Label_521, __D0main
+0	19	229	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	20	229		set __D0main, 70
+0	20	232	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	21	232	#pragma macro 7
+0	21	232		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3837	255	#line 3837 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	20	255	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	21	255	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	255	#pragma macro 7
+0	22	255		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3840	278	#line 3840 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	21	278	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	21	278	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	278		jmp __ASM_Label_524
+0	21	280	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	280		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	21	282	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	21	282	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	282		set __D0main, 36
+0	21	285	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	285		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	21	289	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	289		brtst 4, __ASM_Label_526, __D0main
+0	21	292	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	292		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	21	294	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	21	294	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	294		set __D0main, 37
+0	21	297	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	22	297		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	22	301	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	23	301		brtst 4, __ASM_Label_527, __D0main
+0	22	304	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	23	304		set __D0main, 70
+0	23	307	#line 23 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	24	307	#pragma macro 7
+0	24	307		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3874	330	#line 3874 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	23	330	#line 23 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	24	330	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	25	330	#pragma macro 7
+0	25	330		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3877	353	#line 3877 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	24	353	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	25	353	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	26	353		jmp __ASM_Label_530
+0	25	355	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	26	355		set __D0main, 85
+0	26	358	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	27	358	#pragma macro 7
+0	27	358		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3885	381	#line 3885 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	26	381	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	28	381	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	28	381	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	28	381	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	30	381	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	31	381		jmp __ASM_Label_493
+0	30	383	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+0	31	383		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	31	0	#line 31 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
+2	32	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc
+1	__ResetSensorSubroutine	386	NXTDefs.h
+2	__initialize_global_data	399	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc

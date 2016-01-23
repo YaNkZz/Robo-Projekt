@@ -1,0 +1,44 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__D0main	6	1	0	4	2
+1	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	4	4	2
+2	____initialize_global_data_return	1	1	8	1	3
+3	__constVal63	2	0	9	1	2
+4	__constVal96	2	0	10	1	2
+5	__constVal32	2	0	11	1	6
+6	__OnRev_Tmp	2	1	12	1	2
+7	__constVal0	2	1	13	1	9
+8	__PFTmp	1	1	14	1	1
+9	__constVal3	2	0	15	1	2
+#SOURCES
+Clump	Line	PC	Source
+0	4	0	#line 4 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	5	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	4	2	#line 4 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	4	2	#line 4 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	5	2		set __D0main, 100
+0	5	5	#line 5 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	6	5	#pragma macro 10
+0	6	5		neg __OnRev_Tmp, __D0main
+0	6	8		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3530	31	#line 3530 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	5	31	#line 5 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	5	31	#line 5 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	6	31		set __Wait_7qG2_ms_7qG2_000_inline_main, 3200
+0	5	34	#line 5 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	8551	34	#line 8551 "NXCDefs.h"
+0	8552	34		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	37	#line 8551 "NXCDefs.h"
+0	6	37	#line 6 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	7	37	#line 7 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	8	37	#pragma macro 7
+0	8	37		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3545	60	#line 3545 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	7	60	#line 7 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+0	8	60		exit -1, -1
+1	10	0	#line 10 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc"
+1	11	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc
+1	__initialize_global_data	63	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Grab.nxc

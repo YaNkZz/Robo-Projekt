@@ -1,0 +1,21 @@
+//Setting Touch Sensor
+
+#define time 3200
+
+task main()
+{
+  SetSensorTouch(IN_1);
+  
+    while(true)
+  {  int sens_stop = Sensor(IN_1);
+     NumOut(0, 0, sens_stop);
+   if (sens_stop == 1)
+    {   Off(OUT_BC);
+        Wait(200);
+        OnRev(OUT_A, 100);
+        Wait(time);
+        Off(OUT_A);
+        }
+  }
+}
+// Code does have to end after 1 trial

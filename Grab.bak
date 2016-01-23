@@ -1,0 +1,9 @@
+#define time 3000
+
+task main()
+{
+    OnRev(OUT_A, 100);
+    Wait(time);
+    Off(OUT_A);
+}
+
