@@ -22,7 +22,7 @@ Clump	Line	PC	Source
 0	3530	28	#line 3530 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\open.nxc"
 0	5	28	#line 5 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\open.nxc"
 0	5	28	#line 5 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\open.nxc"
-0	6	28		set __Wait_7qG2_ms_7qG2_000_inline_main, 3200
+0	6	28		set __Wait_7qG2_ms_7qG2_000_inline_main, 2500
 0	5	31	#line 5 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\open.nxc"
 0	8551	31	#line 8551 "NXCDefs.h"
 0	8552	31		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main

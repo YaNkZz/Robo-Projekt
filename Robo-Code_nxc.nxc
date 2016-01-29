@@ -1,6 +1,6 @@
 
-#define BLACK 36
-#define WHITE 37
+#define BLACK 34
+#define WHITE 35
 
 /* Wheels in turns are on 60 */
 task main()
@@ -15,7 +15,7 @@ task main()
         NumOut(0, 0, light_value_r);
         if (light_value_l >= WHITE && light_value_r >= WHITE)
         {
-            OnFwd(OUT_BC, 85);
+            OnFwd(OUT_BC, 90);
         } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
             OnFwd(OUT_C, 70);
             Off(OUT_B);
@@ -23,7 +23,7 @@ task main()
             OnFwd(OUT_B, 70);
             Off(OUT_C);
         } else {
-            OnFwd(OUT_BC, 85);
+            OnFwd(OUT_BC, 90);
         }
     }
 }

@@ -1,4 +1,4 @@
-#define time 3200
+#define time 2500
 
 task main()
 {

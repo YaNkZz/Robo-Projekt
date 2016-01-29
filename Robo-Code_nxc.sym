@@ -201,7 +201,7 @@ Clump	Line	PC	Source
 0	16	153		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
 0	15	155	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	15	155	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	16	155		set __D0main, 37
+0	16	155		set __D0main, 35
 0	15	158	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	16	158		cmp 3, __D0main, __signed_stack_001main, __D0main
 0	15	162	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
@@ -210,13 +210,13 @@ Clump	Line	PC	Source
 0	16	165		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
 0	15	167	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	16	167	#line 16 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	17	167		set __D0main, 37
+0	17	167		set __D0main, 35
 0	16	170	#line 16 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	17	170		cmp 3, __D0main, __signed_stack_001main, __D0main
 0	17	174	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	18	174		brtst 4, __ASM_Label_515, __D0main
 0	17	177	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	18	177		set __D0main, 85
+0	18	177		set __D0main, 90
 0	18	180	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	19	180	#pragma macro 7
 0	19	180		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
@@ -228,7 +228,7 @@ Clump	Line	PC	Source
 0	19	205		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
 0	18	207	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	18	207	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	19	207		set __D0main, 37
+0	19	207		set __D0main, 35
 0	18	210	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	19	210		cmp 3, __D0main, __signed_stack_001main, __D0main
 0	18	214	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
@@ -237,7 +237,7 @@ Clump	Line	PC	Source
 0	19	217		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
 0	18	219	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	18	219	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	19	219		set __D0main, 36
+0	19	219		set __D0main, 34
 0	18	222	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	19	222		cmp 2, __D0main, __signed_stack_001main, __D0main
 0	19	226	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
@@ -260,7 +260,7 @@ Clump	Line	PC	Source
 0	22	280		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
 0	21	282	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	21	282	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	22	282		set __D0main, 36
+0	22	282		set __D0main, 34
 0	21	285	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	22	285		cmp 2, __D0main, __signed_stack_001main, __D0main
 0	21	289	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
@@ -269,7 +269,7 @@ Clump	Line	PC	Source
 0	22	292		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
 0	21	294	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	21	294	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	22	294		set __D0main, 37
+0	22	294		set __D0main, 35
 0	21	297	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	22	297		cmp 3, __D0main, __signed_stack_001main, __D0main
 0	22	301	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
@@ -289,7 +289,7 @@ Clump	Line	PC	Source
 0	25	353	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	26	353		jmp __ASM_Label_530
 0	25	355	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	26	355		set __D0main, 85
+0	26	355		set __D0main, 90
 0	26	358	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	27	358	#pragma macro 7
 0	27	358		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
