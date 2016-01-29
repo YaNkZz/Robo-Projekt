@@ -1,0 +1,32 @@
+//Setting Touch Sensor
+
+#define time 2500
+#define backwards 1000
+#define turn_time 3700
+//One turn is 1300! 3900 means 270°
+
+task main()
+{
+  SetSensorTouch(IN_1);
+  
+    while(true)
+  {  int sens_stop = Sensor(IN_1);
+     NumOut(0, 0, sens_stop);
+   if (sens_stop == 1)
+    {   Off(OUT_BC);
+        Wait(200);
+        OnRev(OUT_A, 100);
+        Wait(time);
+        Off(OUT_A);
+        OnRev(OUT_BC, 40);
+        Wait(backwards);
+        Off(OUT_BC);
+        
+     OnFwd(OUT_B, 40);  //(B should be left wheel)
+     OnRev(OUT_C, 40);
+     Wait(turn_time);
+     Off(OUT_BC);
+        }
+  }
+}
+// Code does have to end after 1 trial

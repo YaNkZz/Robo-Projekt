@@ -1,0 +1,617 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0SetSensorLight_inline_main	5	1	0	4	10
+1	__D0SetSensorLight_inline_main	6	1	4	4	4
+2	__D0main	6	1	8	4	108
+3	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	12	4	8
+4	__signed_stack_002main	6	1	16	4	8
+5	__signed_stack_001main	6	1	20	4	40
+6	__main_7qG2_light_value_r_7qG2_001	4	1	24	2	11
+7	__main_7qG2_light_value_l_7qG2_001	4	1	26	2	11
+8	__main_7qG2_sens_stop_7qG2_001	4	1	28	2	3
+9	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	30	1	4
+10	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	31	1	4
+11	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	32	1	4
+12	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	33	1	10
+13	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	34	1	4
+14	__constVal96	2	0	35	1	20
+15	__constVal63	2	0	36	1	20
+16	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	37	1	4
+17	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	38	1	2
+18	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	39	1	4
+19	__constVal2	2	0	40	1	7
+20	__PFTmp	1	1	41	1	1
+21	____ResetSensorSubroutine_return	1	1	42	1	5
+22	__ResetSensorPort	1	1	43	1	5
+23	__ResetSensorTmp	1	1	44	1	2
+24	__constVal3	2	0	45	1	20
+25	__constVal32	2	0	46	1	61
+26	__OnRev_Tmp	2	1	47	1	6
+27	____initialize_global_data_return	1	1	48	1	3
+28	__constVal0	2	1	49	1	71
+29	__constVal1	2	0	50	1	11
+30	__TextOutArgs	8	0	4	16	24
+31	__TextOutArgs.Result	2	1	52	1	24
+32	__TextOutArgs.Location	8	0	2	4	24
+33	__TextOutArgs.Location.X	4	1	56	2	24
+34	__TextOutArgs.Location.Y	4	1	58	2	24
+35	__TextOutArgs.Text	7	0	60	4	24
+36	__TextOutArgs.Text.Text_type	1	0	0	1	0
+37	__TextOutArgs.Options	5	1	64	4	24
+38	__OUT_BC	7	0	68	4	8
+39	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	11	0	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	12	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	11	2	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	11	2	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	12	2		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	11	5	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	4302	5	#line 4302 "NXCDefs.h"
+0	4303	5	#pragma macro 6
+0	4303	5		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	4303	9		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	4303	13		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	4303	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3620	17	#line 3620 "NXCDefs.h"
+0	4302	17	#line 4302 "NXCDefs.h"
+0	12	17	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	12	17	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	13	17		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	12	20	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	13	20	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	14	20		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	22	#line 4313 "NXCDefs.h"
+0	4314	22		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	24	#line 4313 "NXCDefs.h"
+0	4313	24	#line 4313 "NXCDefs.h"
+0	4314	24		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	26	#line 4313 "NXCDefs.h"
+0	4314	26		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	29	#line 4313 "NXCDefs.h"
+0	4314	29		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	32	#line 4313 "NXCDefs.h"
+0	4314	32		set __DU0SetSensorLight_inline_main, 5
+0	4313	35	#line 4313 "NXCDefs.h"
+0	4313	35	#line 4313 "NXCDefs.h"
+0	4314	35		jmp __001__ASM_Label_5
+0	4313	37	#line 4313 "NXCDefs.h"
+0	4314	37		set __DU0SetSensorLight_inline_main, 6
+0	4313	40	#line 4313 "NXCDefs.h"
+0	4313	40	#line 4313 "NXCDefs.h"
+0	4314	40		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	42	#line 4247 "NXCDefs.h"
+0	4248	42		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	46	#line 4247 "NXCDefs.h"
+0	4314	46	#line 4314 "NXCDefs.h"
+0	4314	46	#line 4314 "NXCDefs.h"
+0	4315	46		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	48	#line 4314 "NXCDefs.h"
+0	4314	48	#line 4314 "NXCDefs.h"
+0	4315	48		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	51	#line 4314 "NXCDefs.h"
+0	4260	51	#line 4260 "NXCDefs.h"
+0	4261	51		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	55	#line 4260 "NXCDefs.h"
+0	4315	55	#line 4315 "NXCDefs.h"
+0	4315	55	#line 4315 "NXCDefs.h"
+0	4316	55		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	57	#line 4315 "NXCDefs.h"
+0	4278	57	#line 4278 "NXCDefs.h"
+0	4279	57	#pragma macro 4
+0	4279	57		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	59		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3710	61	#line 3710 "NXCDefs.h"
+0	4278	61	#line 4278 "NXCDefs.h"
+0	4316	61	#line 4316 "NXCDefs.h"
+0	13	61	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	13	61	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	14	61		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	13	64	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	15	64	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	16	64		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	66	#line 4313 "NXCDefs.h"
+0	4314	66		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	68	#line 4313 "NXCDefs.h"
+0	4313	68	#line 4313 "NXCDefs.h"
+0	4314	68		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	70	#line 4313 "NXCDefs.h"
+0	4314	70		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	73	#line 4313 "NXCDefs.h"
+0	4314	73		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	76	#line 4313 "NXCDefs.h"
+0	4314	76		set __DU0SetSensorLight_inline_main, 5
+0	4313	79	#line 4313 "NXCDefs.h"
+0	4313	79	#line 4313 "NXCDefs.h"
+0	4314	79		jmp __002__ASM_Label_5
+0	4313	81	#line 4313 "NXCDefs.h"
+0	4314	81		set __DU0SetSensorLight_inline_main, 6
+0	4313	84	#line 4313 "NXCDefs.h"
+0	4313	84	#line 4313 "NXCDefs.h"
+0	4314	84		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	86	#line 4247 "NXCDefs.h"
+0	4248	86		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	90	#line 4247 "NXCDefs.h"
+0	4314	90	#line 4314 "NXCDefs.h"
+0	4314	90	#line 4314 "NXCDefs.h"
+0	4315	90		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	92	#line 4314 "NXCDefs.h"
+0	4314	92	#line 4314 "NXCDefs.h"
+0	4315	92		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	95	#line 4314 "NXCDefs.h"
+0	4260	95	#line 4260 "NXCDefs.h"
+0	4261	95		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	99	#line 4260 "NXCDefs.h"
+0	4315	99	#line 4315 "NXCDefs.h"
+0	4315	99	#line 4315 "NXCDefs.h"
+0	4316	99		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	101	#line 4315 "NXCDefs.h"
+0	4278	101	#line 4278 "NXCDefs.h"
+0	4279	101	#pragma macro 4
+0	4279	101		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	103		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3773	105	#line 3773 "NXCDefs.h"
+0	4278	105	#line 4278 "NXCDefs.h"
+0	4316	105	#line 4316 "NXCDefs.h"
+0	15	105	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	16	105	#line 16 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	17	105		set __D0main, 1
+0	17	108	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	18	108		tst 5, __D0main, __D0main
+0	17	111	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	18	111		brtst 4, __ASM_Label_496, __D0main
+0	17	114	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	18	114		getin __main_7qG2_light_value_l_7qG2_001, __constVal2, 4
+0	17	118	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	18	118	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	19	118		getin __main_7qG2_light_value_r_7qG2_001, __constVal1, 4
+0	18	122	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	19	122	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	20	122		getin __main_7qG2_sens_stop_7qG2_001, __constVal0, 4
+0	19	126	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	20	126	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	126		set __signed_stack_001main, 45
+0	20	129	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	20	129	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	129		set __signed_stack_002main, 30
+0	20	132	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	20	132	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	132		mov __D0main, __main_7qG2_light_value_l_7qG2_001
+0	21	134	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	134	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	134		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	21	136	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	136		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	21	138	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	138		set __TextOutArgs.Options, 0
+0	21	141	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	141		numtostr __TextOutArgs.Text, __D0main
+0	21	144	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	144		syscall 13, __TextOutArgs
+0	21	147	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	147		mov __D0main, __TextOutArgs.Result
+0	21	149	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	149	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	149	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	149		set __signed_stack_001main, 0
+0	21	152	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	152	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	152		set __signed_stack_002main, 0
+0	21	155	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	21	155	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	155		mov __D0main, __main_7qG2_light_value_r_7qG2_001
+0	22	157	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	157	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	157		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	22	159	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	159		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	22	161	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	161		set __TextOutArgs.Options, 0
+0	22	164	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	164		numtostr __TextOutArgs.Text, __D0main
+0	22	167	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	167		syscall 13, __TextOutArgs
+0	22	170	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	170		mov __D0main, __TextOutArgs.Result
+0	22	172	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	172	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	172	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	172		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	22	174	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	174	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	174		set __D0main, 35
+0	22	177	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	177		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	22	181	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	181		brtst 4, __ASM_Label_518, __D0main
+0	22	184	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	184		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	22	186	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	22	186	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	186		set __D0main, 35
+0	22	189	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	189		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	22	193	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	193		brtst 4, __ASM_Label_518, __D0main
+0	22	196	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	196		mov __signed_stack_001main, __main_7qG2_sens_stop_7qG2_001
+0	22	198	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	23	198	#line 23 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	24	198		set __D0main, 0
+0	23	201	#line 23 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	24	201		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	24	205	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	25	205		brtst 4, __ASM_Label_519, __D0main
+0	24	208	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	25	208		set __D0main, 50
+0	25	211	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	211	#pragma macro 7
+0	26	211		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3921	234	#line 3921 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	25	234	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	25	234	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	234		jmp __ASM_Label_522
+0	25	236	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	236		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	25	238	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	25	238	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	238		set __D0main, 35
+0	25	241	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	241		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	25	245	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	245		brtst 4, __ASM_Label_524, __D0main
+0	25	248	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	248		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	25	250	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	25	250	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	250		set __D0main, 34
+0	25	253	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	26	253		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	26	257	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	27	257		brtst 4, __ASM_Label_525, __D0main
+0	26	260	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	27	260		set __D0main, 30
+0	27	263	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	28	263	#pragma macro 7
+0	28	263		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3955	286	#line 3955 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	27	286	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	28	286	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	286	#pragma macro 7
+0	29	286		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3958	309	#line 3958 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	28	309	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	28	309	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	309		jmp __ASM_Label_528
+0	28	311	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	311		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	28	313	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	28	313	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	313		set __D0main, 34
+0	28	316	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	316		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	28	320	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	320		brtst 4, __ASM_Label_530, __D0main
+0	28	323	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	323		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	28	325	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	28	325	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	325		set __D0main, 35
+0	28	328	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	29	328		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	29	332	#line 29 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	30	332		brtst 4, __ASM_Label_531, __D0main
+0	29	335	#line 29 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	30	335		set __D0main, 30
+0	30	338	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	31	338	#pragma macro 7
+0	31	338		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3992	361	#line 3992 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	30	361	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	32	361	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	361	#pragma macro 7
+0	33	361		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3995	384	#line 3995 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	32	384	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	32	384	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	384		jmp __ASM_Label_534
+0	32	386	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	386		mov __signed_stack_001main, __main_7qG2_sens_stop_7qG2_001
+0	32	388	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	32	388	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	388		set __D0main, 1
+0	32	391	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	391		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	32	395	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	395		brtst 4, __ASM_Label_536, __D0main
+0	32	398	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	398		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	32	400	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	32	400	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	400		set __D0main, 35
+0	32	403	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	403		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	32	407	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	407		brtst 4, __ASM_Label_536, __D0main
+0	32	410	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	410		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	32	412	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	33	412	#line 33 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	34	412		set __D0main, 35
+0	33	415	#line 33 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	34	415		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	33	419	#line 33 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	34	419		brtst 4, __ASM_Label_537, __D0main
+0	34	422	#line 34 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	35	422	#pragma macro 7
+0	35	422		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4039	445	#line 4039 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	34	445	#line 34 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	34	445	#line 34 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	35	445		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	34	448	#line 34 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	8551	448	#line 8551 "NXCDefs.h"
+0	8552	448		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	451	#line 8551 "NXCDefs.h"
+0	35	451	#line 35 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	35	451	#line 35 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	36	451		set __D0main, 100
+0	36	454	#line 36 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	37	454	#pragma macro 10
+0	37	454		neg __OnRev_Tmp, __D0main
+0	37	457		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4056	480	#line 4056 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	36	480	#line 36 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	36	480	#line 36 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	37	480		set __Wait_7qG2_ms_7qG2_000_inline_main, 2500
+0	36	483	#line 36 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	8551	483	#line 8551 "NXCDefs.h"
+0	8552	483		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	486	#line 8551 "NXCDefs.h"
+0	37	486	#line 37 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	38	486	#line 38 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	39	486	#pragma macro 7
+0	39	486		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4067	509	#line 4067 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	38	509	#line 38 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	38	509	#line 38 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	39	509		set __D0main, 40
+0	39	512	#line 39 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	40	512	#pragma macro 10
+0	40	512		neg __OnRev_Tmp, __D0main
+0	40	515		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4072	538	#line 4072 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	39	538	#line 39 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	39	538	#line 39 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	40	538		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	39	541	#line 39 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	8551	541	#line 8551 "NXCDefs.h"
+0	8552	541		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	544	#line 8551 "NXCDefs.h"
+0	40	544	#line 40 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	42	544	#line 42 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	43	544	#pragma macro 7
+0	43	544		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4083	567	#line 4083 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	42	567	#line 42 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	42	567	#line 42 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	43	567		set __D0main, 40
+0	43	570	#line 43 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	44	570	#pragma macro 7
+0	44	570		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4088	593	#line 4088 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	43	593	#line 43 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	43	593	#line 43 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	44	593		set __D0main, 40
+0	44	596	#line 44 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	45	596	#pragma macro 10
+0	45	596		neg __OnRev_Tmp, __D0main
+0	45	599		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4093	622	#line 4093 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	44	622	#line 44 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	44	622	#line 44 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	45	622		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	44	625	#line 44 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	8551	625	#line 8551 "NXCDefs.h"
+0	8552	625		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	628	#line 8551 "NXCDefs.h"
+0	45	628	#line 45 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	46	628	#line 46 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	47	628	#pragma macro 7
+0	47	628		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4104	651	#line 4104 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	46	651	#line 46 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	47	651	#line 47 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	48	651		jmp __ASM_Label_496
+0	47	653	#line 47 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	49	653	#line 49 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	50	653		jmp __ASM_Label_554
+0	49	655	#line 49 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	50	655		set __D0main, 50
+0	50	658	#line 50 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	51	658	#pragma macro 7
+0	51	658		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4115	681	#line 4115 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	50	681	#line 50 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	75	681	#line 75 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	75	681	#line 75 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	75	681	#line 75 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	75	681	#line 75 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	75	681	#line 75 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	76	681		jmp __ASM_Label_495
+0	75	683	#line 75 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	76	683	#line 76 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	77	683		set __D0main, 1
+0	77	686	#line 77 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	78	686		tst 5, __D0main, __D0main
+0	77	689	#line 77 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	78	689		brtst 4, __ASM_Label_558, __D0main
+0	77	692	#line 77 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	78	692		getin __main_7qG2_light_value_l_7qG2_001, __constVal2, 4
+0	77	696	#line 77 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	78	696	#line 78 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	79	696		getin __main_7qG2_light_value_r_7qG2_001, __constVal1, 4
+0	78	700	#line 78 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	79	700	#line 79 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	700		set __signed_stack_001main, 45
+0	79	703	#line 79 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	79	703	#line 79 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	703		set __signed_stack_002main, 30
+0	79	706	#line 79 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	79	706	#line 79 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	706		mov __D0main, __main_7qG2_light_value_l_7qG2_001
+0	80	708	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	708	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	708		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	80	710	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	710		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	80	712	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	712		set __TextOutArgs.Options, 0
+0	80	715	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	715		numtostr __TextOutArgs.Text, __D0main
+0	80	718	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	718		syscall 13, __TextOutArgs
+0	80	721	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	721		mov __D0main, __TextOutArgs.Result
+0	80	723	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	723	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	723	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	723		set __signed_stack_001main, 0
+0	80	726	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	726	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	726		set __signed_stack_002main, 0
+0	80	729	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	80	729	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	729		mov __D0main, __main_7qG2_light_value_r_7qG2_001
+0	81	731	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	731	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	731		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	81	733	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	733		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	81	735	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	735		set __TextOutArgs.Options, 0
+0	81	738	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	738		numtostr __TextOutArgs.Text, __D0main
+0	81	741	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	741		syscall 13, __TextOutArgs
+0	81	744	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	744		mov __D0main, __TextOutArgs.Result
+0	81	746	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	746	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	746	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	746		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	81	748	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	81	748	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	748		set __D0main, 35
+0	81	751	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	751		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	81	755	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	755		brtst 4, __ASM_Label_578, __D0main
+0	81	758	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	758		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	81	760	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	82	760	#line 82 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	83	760		set __D0main, 35
+0	82	763	#line 82 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	83	763		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	83	767	#line 83 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	84	767		brtst 4, __ASM_Label_579, __D0main
+0	83	770	#line 83 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	84	770		set __D0main, 90
+0	84	773	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	773	#pragma macro 7
+0	85	773		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4243	796	#line 4243 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	84	796	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	84	796	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	796		jmp __ASM_Label_582
+0	84	798	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	798		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	84	800	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	84	800	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	800		set __D0main, 35
+0	84	803	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	803		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	84	807	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	807		brtst 4, __ASM_Label_584, __D0main
+0	84	810	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	810		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	84	812	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	84	812	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	812		set __D0main, 34
+0	84	815	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	85	815		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	85	819	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	86	819		brtst 4, __ASM_Label_585, __D0main
+0	85	822	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	86	822		set __D0main, 70
+0	86	825	#line 86 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	87	825	#pragma macro 7
+0	87	825		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4277	848	#line 4277 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	86	848	#line 86 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	87	848	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	848	#pragma macro 7
+0	88	848		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4280	871	#line 4280 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	87	871	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	87	871	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	871		jmp __ASM_Label_588
+0	87	873	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	873		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	87	875	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	87	875	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	875		set __D0main, 34
+0	87	878	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	878		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	87	882	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	882		brtst 4, __ASM_Label_590, __D0main
+0	87	885	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	885		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	87	887	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	87	887	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	887		set __D0main, 35
+0	87	890	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	88	890		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	88	894	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	89	894		brtst 4, __ASM_Label_591, __D0main
+0	88	897	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	89	897		set __D0main, 70
+0	89	900	#line 89 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	90	900	#pragma macro 7
+0	90	900		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4314	923	#line 4314 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	89	923	#line 89 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	90	923	#line 90 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	91	923	#pragma macro 7
+0	91	923		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4317	946	#line 4317 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	90	946	#line 90 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	91	946	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	92	946		jmp __ASM_Label_594
+0	91	948	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	92	948		set __D0main, 90
+0	92	951	#line 92 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	93	951	#pragma macro 7
+0	93	951		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4325	974	#line 4325 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	92	974	#line 92 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	94	974	#line 94 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	94	974	#line 94 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	94	974	#line 94 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	96	974	#line 96 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	97	974		jmp __ASM_Label_557
+0	96	976	#line 96 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+0	97	976		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	97	0	#line 97 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc"
+2	98	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc
+1	__ResetSensorSubroutine	979	NXTDefs.h
+2	__initialize_global_data	992	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_turn_drive.nxc

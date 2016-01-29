@@ -1,0 +1,184 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__signed_stack_001main	6	1	0	4	4
+1	__signed_stack_002main	6	1	4	4	2
+2	__D0main	6	1	8	4	19
+3	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	12	4	8
+4	__main_7qG2_sens_stop_7qG2_001	4	1	16	2	3
+5	__PFTmp	1	1	18	1	1
+6	__constVal96	2	0	19	1	8
+7	__constVal63	2	0	20	1	8
+8	____initialize_global_data_return	1	1	21	1	3
+9	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	22	1	4
+10	__constVal2	2	0	23	1	1
+11	__constVal1	2	0	24	1	3
+12	__constVal0	2	1	25	1	31
+13	__OnRev_Tmp	2	1	26	1	6
+14	__constVal32	2	0	27	1	25
+15	__constVal3	2	0	28	1	8
+16	____ResetSensorSubroutine_return	1	1	29	1	3
+17	__ResetSensorTmp	1	1	30	1	2
+18	__ResetSensorPort	1	1	31	1	3
+19	__TextOutArgs	8	0	4	16	6
+20	__TextOutArgs.Result	2	1	32	1	6
+21	__TextOutArgs.Location	8	0	2	4	6
+22	__TextOutArgs.Location.X	4	1	36	2	6
+23	__TextOutArgs.Location.Y	4	1	38	2	6
+24	__TextOutArgs.Text	7	0	40	4	6
+25	__TextOutArgs.Text.Text_type	1	0	0	1	0
+26	__TextOutArgs.Options	5	1	44	4	6
+27	__OUT_BC	7	0	48	4	4
+28	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	9	0	#line 9 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	10	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	9	2	#line 9 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	9	2	#line 9 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	10	2		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	9	5	#line 9 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	4302	5	#line 4302 "NXCDefs.h"
+0	4303	5	#pragma macro 6
+0	4303	5		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	4303	9		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	4303	13		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	4303	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3578	17	#line 3578 "NXCDefs.h"
+0	4302	17	#line 4302 "NXCDefs.h"
+0	11	17	#line 11 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	12	17	#line 12 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	13	17		set __D0main, 1
+0	12	20	#line 12 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	13	20		tst 5, __D0main, __D0main
+0	12	23	#line 12 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	13	23		brtst 4, __ASM_Label_492, __D0main
+0	12	26	#line 12 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	13	26		getin __main_7qG2_sens_stop_7qG2_001, __constVal0, 4
+0	12	30	#line 12 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	13	30	#line 13 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	14	30		set __signed_stack_001main, 0
+0	13	33	#line 13 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	13	33	#line 13 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	14	33		set __signed_stack_002main, 0
+0	13	36	#line 13 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	13	36	#line 13 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	14	36		mov __D0main, __main_7qG2_sens_stop_7qG2_001
+0	14	38	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	14	38	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	38		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	14	40	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	40		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	14	42	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	42		set __TextOutArgs.Options, 0
+0	14	45	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	45		numtostr __TextOutArgs.Text, __D0main
+0	14	48	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	48		syscall 13, __TextOutArgs
+0	14	51	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	51		mov __D0main, __TextOutArgs.Result
+0	14	53	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	14	53	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	14	53	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	53		mov __signed_stack_001main, __main_7qG2_sens_stop_7qG2_001
+0	14	55	#line 14 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	15	55	#line 15 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	16	55		set __D0main, 1
+0	15	58	#line 15 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	16	58		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	15	62	#line 15 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	16	62		brtst 4, __ASM_Label_505, __D0main
+0	16	65	#line 16 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	17	65	#pragma macro 7
+0	17	65		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3646	88	#line 3646 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	16	88	#line 16 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	16	88	#line 16 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	17	88		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	16	91	#line 16 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	8551	91	#line 8551 "NXCDefs.h"
+0	8552	91		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	94	#line 8551 "NXCDefs.h"
+0	17	94	#line 17 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	17	94	#line 17 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	18	94		set __D0main, 100
+0	18	97	#line 18 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	19	97	#pragma macro 10
+0	19	97		neg __OnRev_Tmp, __D0main
+0	19	100		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3663	123	#line 3663 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	18	123	#line 18 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	18	123	#line 18 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	19	123		set __Wait_7qG2_ms_7qG2_000_inline_main, 2500
+0	18	126	#line 18 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	8551	126	#line 8551 "NXCDefs.h"
+0	8552	126		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	129	#line 8551 "NXCDefs.h"
+0	19	129	#line 19 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	20	129	#line 20 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	21	129	#pragma macro 7
+0	21	129		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3674	152	#line 3674 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	20	152	#line 20 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	20	152	#line 20 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	21	152		set __D0main, 40
+0	21	155	#line 21 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	22	155	#pragma macro 10
+0	22	155		neg __OnRev_Tmp, __D0main
+0	22	158		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3679	181	#line 3679 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	21	181	#line 21 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	21	181	#line 21 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	22	181		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	21	184	#line 21 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	8551	184	#line 8551 "NXCDefs.h"
+0	8552	184		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	187	#line 8551 "NXCDefs.h"
+0	22	187	#line 22 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	24	187	#line 24 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	25	187	#pragma macro 7
+0	25	187		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3690	210	#line 3690 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	24	210	#line 24 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	24	210	#line 24 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	25	210		set __D0main, 40
+0	25	213	#line 25 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	26	213	#pragma macro 7
+0	26	213		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3695	236	#line 3695 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	25	236	#line 25 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	25	236	#line 25 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	26	236		set __D0main, 40
+0	26	239	#line 26 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	27	239	#pragma macro 10
+0	27	239		neg __OnRev_Tmp, __D0main
+0	27	242		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3700	265	#line 3700 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	26	265	#line 26 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	26	265	#line 26 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	27	265		set __Wait_7qG2_ms_7qG2_000_inline_main, 3700
+0	26	268	#line 26 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	8551	268	#line 8551 "NXCDefs.h"
+0	8552	268		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	271	#line 8551 "NXCDefs.h"
+0	27	271	#line 27 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	28	271	#line 28 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	29	271	#pragma macro 7
+0	29	271		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3711	294	#line 3711 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	28	294	#line 28 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	30	294	#line 30 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	32	294	#line 32 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	33	294		jmp __ASM_Label_491
+0	32	296	#line 32 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+0	33	296		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	33	0	#line 33 "C:\Users\Rob\AppData\Local\Temp\temp.nxc"
+2	34	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Users\Rob\AppData\Local\Temp\temp.nxc
+1	__ResetSensorSubroutine	299	NXTDefs.h
+2	__initialize_global_data	312	C:\Users\Rob\AppData\Local\Temp\temp.nxc

@@ -1,0 +1,99 @@
+//Setting Touch Sensor
+#define BLACK 34
+#define WHITE 35
+
+#define time 2500
+#define backwards 1000
+#define turn_time 1300
+//One turn is 1300! 3700 means 540°
+
+task main()
+{
+  SetSensorTouch(IN_1);
+  SetSensorLight(IN_2);
+  SetSensorLight(IN_3);
+  
+    while(true)
+    {
+        int light_value_l = Sensor(IN_3);
+        int light_value_r = Sensor(IN_2);
+        int sens_stop = Sensor(IN_1);
+        NumOut(45, 30, light_value_l);
+        NumOut(0, 0, light_value_r);
+        if(sens_stop==0)
+        {
+        if (light_value_l >= WHITE && light_value_r >= WHITE)
+        {
+            OnFwd(OUT_BC, 50);
+        } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
+            OnFwd(OUT_C, 30);
+            Off(OUT_B);
+        } else if (light_value_l <= BLACK && light_value_r >= WHITE) {
+            OnFwd(OUT_B, 30);
+            Off(OUT_C);
+        else {
+            OnFwd(OUT_BC, 50);
+        }
+        if (sens_stop==1)
+    {
+        Off(OUT_BC);
+        Wait(200);
+        OnRev(OUT_A, 100);
+        Wait(time);
+        Off(OUT_A);
+        OnRev(OUT_BC, 40);
+        Wait(backwards);
+        Off(OUT_BC);
+
+     OnFwd(OUT_B, 40);  //(B should be left wheel)
+     OnRev(OUT_C, 40);
+     Wait(turn_time);
+     Off(OUT_BC);
+     break;
+     }
+
+    }
+
+/*    while(true)
+  {  int sens_stop = Sensor(IN_1);
+     NumOut(0, 0, sens_stop);
+   if (sens_stop == 1)
+    {   Off(OUT_BC);
+        Wait(200);
+        OnRev(OUT_A, 100);
+        Wait(time);
+        Off(OUT_A);
+        OnRev(OUT_BC, 40);
+        Wait(backwards);
+        Off(OUT_BC);
+        
+     OnFwd(OUT_B, 40);  //(B should be left wheel)
+     OnRev(OUT_C, 40);
+     Wait(turn_time);
+     Off(OUT_BC);
+     break;
+     }
+
+   } */ // hier ist alles auskommentiert, um oben Fahren und greifen/drehen vereinigen zu können
+   
+   while(true)
+    {
+        int light_value_l = Sensor(IN_3);
+        int light_value_r = Sensor(IN_2);
+        NumOut(45, 30, light_value_l);
+        NumOut(0, 0, light_value_r);
+        if (light_value_l >= WHITE && light_value_r >= WHITE)
+        {
+            OnFwd(OUT_BC, 90);
+        } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
+            OnFwd(OUT_C, 70);
+            Off(OUT_B);
+        } else if (light_value_l <= BLACK && light_value_r >= WHITE) {
+            OnFwd(OUT_B, 70);
+            Off(OUT_C);
+        } else {
+            OnFwd(OUT_BC, 90);
+        }
+    }
+}
+// Code does have to end after 1 trial

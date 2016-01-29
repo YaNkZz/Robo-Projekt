@@ -1,0 +1,600 @@
+#SYMBOLS
+Index	Identifier	Type	Flag	Data	Size	RefCount
+0	__DU0SetSensorLight_inline_main	5	1	0	4	10
+1	__D0SetSensorLight_inline_main	6	1	4	4	4
+2	__D0main	6	1	8	4	100
+3	__Wait_7qG2_ms_7qG2_000_inline_main	5	1	12	4	8
+4	__signed_stack_002main	6	1	16	4	8
+5	__signed_stack_001main	6	1	20	4	36
+6	__main_7qG2_sens_stop_7qG2_001	4	1	24	2	3
+7	__main_7qG2_light_value_r_7qG2_001	4	1	26	2	5
+8	__main_7qG2_light_value_l_7qG2_001	4	1	28	2	5
+9	__main_7qG2_light_value_l_7qG2_002	4	1	30	2	5
+10	__main_7qG2_light_value_r_7qG2_002	4	1	32	2	5
+11	__SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main	1	1	34	1	4
+12	__SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	35	1	4
+13	__SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	36	1	4
+14	__SetSensorLight_7qG2_bActive_7qG2_000_inline_main	1	1	37	1	4
+15	__constVal63	2	0	38	1	20
+16	__constVal96	2	0	39	1	20
+17	__SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main	1	1	40	1	4
+18	__ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main	1	1	41	1	2
+19	__SetSensorLight_7qG2_port_7qG2_000_inline_main	1	1	42	1	10
+20	__constVal2	2	0	43	1	7
+21	__PFTmp	1	1	44	1	1
+22	__constVal3	2	0	45	1	20
+23	__ResetSensorPort	1	1	46	1	5
+24	__ResetSensorTmp	1	1	47	1	2
+25	____ResetSensorSubroutine_return	1	1	48	1	5
+26	__SetSensorTouch_7qG2_port_7qG2_000_inline_main	1	1	49	1	4
+27	__OnRev_Tmp	2	1	50	1	6
+28	____initialize_global_data_return	1	1	51	1	3
+29	__constVal0	2	1	52	1	71
+30	__constVal1	2	0	53	1	11
+31	__constVal32	2	0	54	1	61
+32	__TextOutArgs	8	0	4	16	24
+33	__TextOutArgs.Result	2	1	56	1	24
+34	__TextOutArgs.Location	8	0	2	4	24
+35	__TextOutArgs.Location.X	4	1	60	2	24
+36	__TextOutArgs.Location.Y	4	1	62	2	24
+37	__TextOutArgs.Text	7	0	64	4	24
+38	__TextOutArgs.Text.Text_type	1	0	0	1	0
+39	__TextOutArgs.Options	5	1	68	4	24
+40	__OUT_BC	7	0	72	4	8
+41	__OUT_BC.__OUT_BC_type	1	0	0	1	0
+#SOURCES
+Clump	Line	PC	Source
+0	11	0	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	12	0		subcall __initialize_global_data, ____initialize_global_data_return
+0	11	2	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	11	2	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	12	2		set __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	11	5	#line 11 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	4302	5	#line 4302 "NXCDefs.h"
+0	4303	5	#pragma macro 6
+0	4303	5		setin __constVal1, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 0
+0	4303	9		setin __constVal32, __SetSensorTouch_7qG2_port_7qG2_000_inline_main, 1
+0	4303	13		mov __ResetSensorPort, __SetSensorTouch_7qG2_port_7qG2_000_inline_main
+0	4303	15		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3620	17	#line 3620 "NXCDefs.h"
+0	4302	17	#line 4302 "NXCDefs.h"
+0	12	17	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	12	17	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	13	17		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 1
+0	12	20	#line 12 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	13	20	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	14	20		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	22	#line 4313 "NXCDefs.h"
+0	4314	22		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	24	#line 4313 "NXCDefs.h"
+0	4313	24	#line 4313 "NXCDefs.h"
+0	4314	24		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	26	#line 4313 "NXCDefs.h"
+0	4314	26		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	29	#line 4313 "NXCDefs.h"
+0	4314	29		brtst 4, __001__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	32	#line 4313 "NXCDefs.h"
+0	4314	32		set __DU0SetSensorLight_inline_main, 5
+0	4313	35	#line 4313 "NXCDefs.h"
+0	4313	35	#line 4313 "NXCDefs.h"
+0	4314	35		jmp __001__ASM_Label_5
+0	4313	37	#line 4313 "NXCDefs.h"
+0	4314	37		set __DU0SetSensorLight_inline_main, 6
+0	4313	40	#line 4313 "NXCDefs.h"
+0	4313	40	#line 4313 "NXCDefs.h"
+0	4314	40		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	42	#line 4247 "NXCDefs.h"
+0	4248	42		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	46	#line 4247 "NXCDefs.h"
+0	4314	46	#line 4314 "NXCDefs.h"
+0	4314	46	#line 4314 "NXCDefs.h"
+0	4315	46		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	48	#line 4314 "NXCDefs.h"
+0	4314	48	#line 4314 "NXCDefs.h"
+0	4315	48		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	51	#line 4314 "NXCDefs.h"
+0	4260	51	#line 4260 "NXCDefs.h"
+0	4261	51		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	55	#line 4260 "NXCDefs.h"
+0	4315	55	#line 4315 "NXCDefs.h"
+0	4315	55	#line 4315 "NXCDefs.h"
+0	4316	55		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	57	#line 4315 "NXCDefs.h"
+0	4278	57	#line 4278 "NXCDefs.h"
+0	4279	57	#pragma macro 4
+0	4279	57		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	59		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3710	61	#line 3710 "NXCDefs.h"
+0	4278	61	#line 4278 "NXCDefs.h"
+0	4316	61	#line 4316 "NXCDefs.h"
+0	13	61	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	13	61	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	14	61		set __SetSensorLight_7qG2_port_7qG2_000_inline_main, 2
+0	13	64	#line 13 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	15	64	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	16	64		mov __SetSensorLight_7qG2_bActive_7qG2_000_inline_main, __constVal1
+0	4313	66	#line 4313 "NXCDefs.h"
+0	4314	66		mov __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4313	68	#line 4313 "NXCDefs.h"
+0	4313	68	#line 4313 "NXCDefs.h"
+0	4314	68		mov __DU0SetSensorLight_inline_main, __SetSensorLight_7qG2_bActive_7qG2_000_inline_main
+0	4313	70	#line 4313 "NXCDefs.h"
+0	4314	70		tst 5, __D0SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4313	73	#line 4313 "NXCDefs.h"
+0	4314	73		brtst 4, __002__ASM_Label_4, __D0SetSensorLight_inline_main
+0	4313	76	#line 4313 "NXCDefs.h"
+0	4314	76		set __DU0SetSensorLight_inline_main, 5
+0	4313	79	#line 4313 "NXCDefs.h"
+0	4313	79	#line 4313 "NXCDefs.h"
+0	4314	79		jmp __002__ASM_Label_5
+0	4313	81	#line 4313 "NXCDefs.h"
+0	4314	81		set __DU0SetSensorLight_inline_main, 6
+0	4313	84	#line 4313 "NXCDefs.h"
+0	4313	84	#line 4313 "NXCDefs.h"
+0	4314	84		mov __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __DU0SetSensorLight_inline_main
+0	4247	86	#line 4247 "NXCDefs.h"
+0	4248	86		setin __SetSensorType_7qG2_type_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorType_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 0
+0	4247	90	#line 4247 "NXCDefs.h"
+0	4314	90	#line 4314 "NXCDefs.h"
+0	4314	90	#line 4314 "NXCDefs.h"
+0	4315	90		mov __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4314	92	#line 4314 "NXCDefs.h"
+0	4314	92	#line 4314 "NXCDefs.h"
+0	4315	92		set __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, 128
+0	4314	95	#line 4314 "NXCDefs.h"
+0	4260	95	#line 4260 "NXCDefs.h"
+0	4261	95		setin __SetSensorMode_7qG2_mode_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorMode_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, 1
+0	4260	99	#line 4260 "NXCDefs.h"
+0	4315	99	#line 4315 "NXCDefs.h"
+0	4315	99	#line 4315 "NXCDefs.h"
+0	4316	99		mov __ResetSensor_7qG2_port_7qG2_000_inline_SetSensorLight_inline_main, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4315	101	#line 4315 "NXCDefs.h"
+0	4278	101	#line 4278 "NXCDefs.h"
+0	4279	101	#pragma macro 4
+0	4279	101		mov __ResetSensorPort, __SetSensorLight_7qG2_port_7qG2_000_inline_main
+0	4279	103		subcall __ResetSensorSubroutine, ____ResetSensorSubroutine_return
+0	3773	105	#line 3773 "NXCDefs.h"
+0	4278	105	#line 4278 "NXCDefs.h"
+0	4316	105	#line 4316 "NXCDefs.h"
+0	15	105	#line 15 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	16	105	#line 16 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	17	105		set __D0main, 1
+0	17	108	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	18	108		tst 5, __D0main, __D0main
+0	17	111	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	18	111		brtst 4, __ASM_Label_496, __D0main
+0	17	114	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	18	114		getin __main_7qG2_light_value_l_7qG2_001, __constVal2, 4
+0	17	118	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	18	118	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	19	118		getin __main_7qG2_light_value_r_7qG2_001, __constVal1, 4
+0	18	122	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	19	122	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	20	122		getin __main_7qG2_sens_stop_7qG2_001, __constVal0, 4
+0	19	126	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	20	126	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	126		set __signed_stack_001main, 45
+0	20	129	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	20	129	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	129		set __signed_stack_002main, 30
+0	20	132	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	20	132	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	132		mov __D0main, __main_7qG2_light_value_l_7qG2_001
+0	21	134	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	134	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	134		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	21	136	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	136		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	21	138	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	138		set __TextOutArgs.Options, 0
+0	21	141	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	141		numtostr __TextOutArgs.Text, __D0main
+0	21	144	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	144		syscall 13, __TextOutArgs
+0	21	147	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	147		mov __D0main, __TextOutArgs.Result
+0	21	149	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	149	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	149	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	149		set __signed_stack_001main, 0
+0	21	152	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	152	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	152		set __signed_stack_002main, 0
+0	21	155	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	21	155	#line 21 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	155		mov __D0main, __main_7qG2_light_value_r_7qG2_001
+0	22	157	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	157	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	157		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	22	159	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	159		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	22	161	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	161		set __TextOutArgs.Options, 0
+0	22	164	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	164		numtostr __TextOutArgs.Text, __D0main
+0	22	167	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	167		syscall 13, __TextOutArgs
+0	22	170	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	170		mov __D0main, __TextOutArgs.Result
+0	22	172	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	172	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	22	172	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	172		mov __signed_stack_001main, __main_7qG2_sens_stop_7qG2_001
+0	22	174	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	23	174	#line 23 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	24	174		set __D0main, 0
+0	23	177	#line 23 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	24	177		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	24	181	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	25	181		brtst 4, __ASM_Label_519, __D0main
+0	24	184	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	25	184		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	24	186	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	24	186	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	25	186		set __D0main, 35
+0	24	189	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	25	189		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	24	193	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	25	193		brtst 4, __ASM_Label_521, __D0main
+0	24	196	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	25	196		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	24	198	#line 24 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	25	198	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	26	198		set __D0main, 35
+0	25	201	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	26	201		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	26	205	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	27	205		brtst 4, __ASM_Label_522, __D0main
+0	26	208	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	27	208		set __D0main, 50
+0	27	211	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	211	#pragma macro 7
+0	28	211		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3923	234	#line 3923 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	27	234	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	27	234	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	234		jmp __ASM_Label_525
+0	27	236	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	236		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	27	238	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	27	238	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	238		set __D0main, 35
+0	27	241	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	241		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	27	245	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	245		brtst 4, __ASM_Label_527, __D0main
+0	27	248	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	248		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	27	250	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	27	250	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	250		set __D0main, 34
+0	27	253	#line 27 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	28	253		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	28	257	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	29	257		brtst 4, __ASM_Label_528, __D0main
+0	28	260	#line 28 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	29	260		set __D0main, 30
+0	29	263	#line 29 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	30	263	#pragma macro 7
+0	30	263		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3957	286	#line 3957 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	29	286	#line 29 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	30	286	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	286	#pragma macro 7
+0	31	286		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3960	309	#line 3960 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	30	309	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	30	309	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	309		jmp __ASM_Label_531
+0	30	311	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	311		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_001
+0	30	313	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	30	313	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	313		set __D0main, 34
+0	30	316	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	316		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	30	320	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	320		brtst 4, __ASM_Label_533, __D0main
+0	30	323	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	323		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_001
+0	30	325	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	30	325	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	325		set __D0main, 35
+0	30	328	#line 30 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	31	328		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	31	332	#line 31 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	32	332		brtst 4, __ASM_Label_534, __D0main
+0	31	335	#line 31 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	32	335		set __D0main, 30
+0	32	338	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	33	338	#pragma macro 7
+0	33	338		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3994	361	#line 3994 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	32	361	#line 32 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	33	361	#line 33 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	34	361	#pragma macro 7
+0	34	361		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	3997	384	#line 3997 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	33	384	#line 33 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	35	384	#line 35 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	36	384		jmp __ASM_Label_537
+0	35	386	#line 35 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	36	386		set __D0main, 50
+0	36	389	#line 36 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	37	389	#pragma macro 7
+0	37	389		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4005	412	#line 4005 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	36	412	#line 36 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	37	412	#line 37 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	37	412	#line 37 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	37	412	#line 37 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	37	412	#line 37 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	38	412		mov __signed_stack_001main, __main_7qG2_sens_stop_7qG2_001
+0	37	414	#line 37 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	38	414	#line 38 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	39	414		set __D0main, 1
+0	38	417	#line 38 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	39	417		cmp 4, __D0main, __signed_stack_001main, __D0main
+0	39	421	#line 39 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	40	421		brtst 4, __ASM_Label_542, __D0main
+0	40	424	#line 40 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	41	424	#pragma macro 7
+0	41	424		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4028	447	#line 4028 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	40	447	#line 40 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	40	447	#line 40 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	41	447		set __Wait_7qG2_ms_7qG2_000_inline_main, 200
+0	40	450	#line 40 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	8551	450	#line 8551 "NXCDefs.h"
+0	8552	450		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	453	#line 8551 "NXCDefs.h"
+0	41	453	#line 41 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	41	453	#line 41 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	42	453		set __D0main, 100
+0	42	456	#line 42 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	43	456	#pragma macro 10
+0	43	456		neg __OnRev_Tmp, __D0main
+0	43	459		setout __constVal0, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4045	482	#line 4045 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	42	482	#line 42 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	42	482	#line 42 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	43	482		set __Wait_7qG2_ms_7qG2_000_inline_main, 2500
+0	42	485	#line 42 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	8551	485	#line 8551 "NXCDefs.h"
+0	8552	485		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	488	#line 8551 "NXCDefs.h"
+0	43	488	#line 43 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	44	488	#line 44 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	45	488	#pragma macro 7
+0	45	488		setout __constVal0, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4056	511	#line 4056 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	44	511	#line 44 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	44	511	#line 44 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	45	511		set __D0main, 40
+0	45	514	#line 45 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	46	514	#pragma macro 10
+0	46	514		neg __OnRev_Tmp, __D0main
+0	46	517		setout __OUT_BC, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4061	540	#line 4061 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	45	540	#line 45 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	45	540	#line 45 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	46	540		set __Wait_7qG2_ms_7qG2_000_inline_main, 1000
+0	45	543	#line 45 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	8551	543	#line 8551 "NXCDefs.h"
+0	8552	543		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	546	#line 8551 "NXCDefs.h"
+0	46	546	#line 46 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	48	546	#line 48 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	49	546	#pragma macro 7
+0	49	546		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4072	569	#line 4072 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	48	569	#line 48 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	48	569	#line 48 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	49	569		set __D0main, 40
+0	49	572	#line 49 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	50	572	#pragma macro 7
+0	50	572		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4077	595	#line 4077 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	49	595	#line 49 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	49	595	#line 49 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	50	595		set __D0main, 40
+0	50	598	#line 50 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	51	598	#pragma macro 10
+0	51	598		neg __OnRev_Tmp, __D0main
+0	51	601		setout __constVal2, 2, __OnRev_Tmp, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4082	624	#line 4082 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	50	624	#line 50 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	50	624	#line 50 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	51	624		set __Wait_7qG2_ms_7qG2_000_inline_main, 1300
+0	50	627	#line 50 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	8551	627	#line 8551 "NXCDefs.h"
+0	8552	627		wait2 NA, __Wait_7qG2_ms_7qG2_000_inline_main
+0	8551	630	#line 8551 "NXCDefs.h"
+0	51	630	#line 51 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	52	630	#line 52 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	53	630	#pragma macro 7
+0	53	630		setout __OUT_BC, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4093	653	#line 4093 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	52	653	#line 52 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	53	653	#line 53 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	54	653		jmp __ASM_Label_496
+0	53	655	#line 53 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	79	655	#line 79 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	79	655	#line 79 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	80	655	#line 80 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	81	655		set __D0main, 1
+0	81	658	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	82	658		tst 5, __D0main, __D0main
+0	81	661	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	82	661		brtst 4, __ASM_Label_560, __D0main
+0	81	664	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	82	664		getin __main_7qG2_light_value_l_7qG2_002, __constVal2, 4
+0	81	668	#line 81 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	82	668	#line 82 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	83	668		getin __main_7qG2_light_value_r_7qG2_002, __constVal1, 4
+0	82	672	#line 82 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	83	672	#line 83 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	672		set __signed_stack_001main, 45
+0	83	675	#line 83 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	83	675	#line 83 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	675		set __signed_stack_002main, 30
+0	83	678	#line 83 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	83	678	#line 83 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	678		mov __D0main, __main_7qG2_light_value_l_7qG2_002
+0	84	680	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	680	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	680		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	84	682	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	682		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	84	684	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	684		set __TextOutArgs.Options, 0
+0	84	687	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	687		numtostr __TextOutArgs.Text, __D0main
+0	84	690	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	690		syscall 13, __TextOutArgs
+0	84	693	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	693		mov __D0main, __TextOutArgs.Result
+0	84	695	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	695	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	695	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	695		set __signed_stack_001main, 0
+0	84	698	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	698	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	698		set __signed_stack_002main, 0
+0	84	701	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	84	701	#line 84 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	701		mov __D0main, __main_7qG2_light_value_r_7qG2_002
+0	85	703	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	703	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	703		mov __TextOutArgs.Location.X, __signed_stack_001main
+0	85	705	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	705		mov __TextOutArgs.Location.Y, __signed_stack_002main
+0	85	707	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	707		set __TextOutArgs.Options, 0
+0	85	710	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	710		numtostr __TextOutArgs.Text, __D0main
+0	85	713	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	713		syscall 13, __TextOutArgs
+0	85	716	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	716		mov __D0main, __TextOutArgs.Result
+0	85	718	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	718	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	718	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	718		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_002
+0	85	720	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	85	720	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	720		set __D0main, 35
+0	85	723	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	723		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	85	727	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	727		brtst 4, __ASM_Label_580, __D0main
+0	85	730	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	730		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_002
+0	85	732	#line 85 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	86	732	#line 86 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	87	732		set __D0main, 35
+0	86	735	#line 86 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	87	735		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	87	739	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	88	739		brtst 4, __ASM_Label_581, __D0main
+0	87	742	#line 87 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	88	742		set __D0main, 90
+0	88	745	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	745	#pragma macro 7
+0	89	745		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4224	768	#line 4224 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	88	768	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	88	768	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	768		jmp __ASM_Label_584
+0	88	770	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	770		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_002
+0	88	772	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	88	772	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	772		set __D0main, 35
+0	88	775	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	775		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	88	779	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	779		brtst 4, __ASM_Label_586, __D0main
+0	88	782	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	782		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_002
+0	88	784	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	88	784	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	784		set __D0main, 34
+0	88	787	#line 88 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	89	787		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	89	791	#line 89 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	90	791		brtst 4, __ASM_Label_587, __D0main
+0	89	794	#line 89 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	90	794		set __D0main, 70
+0	90	797	#line 90 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	91	797	#pragma macro 7
+0	91	797		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4258	820	#line 4258 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	90	820	#line 90 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	91	820	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	820	#pragma macro 7
+0	92	820		setout __constVal1, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4261	843	#line 4261 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	91	843	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	91	843	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	843		jmp __ASM_Label_590
+0	91	845	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	845		mov __signed_stack_001main, __main_7qG2_light_value_l_7qG2_002
+0	91	847	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	91	847	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	847		set __D0main, 34
+0	91	850	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	850		cmp 2, __D0main, __signed_stack_001main, __D0main
+0	91	854	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	854		brtst 4, __ASM_Label_592, __D0main
+0	91	857	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	857		mov __signed_stack_001main, __main_7qG2_light_value_r_7qG2_002
+0	91	859	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	91	859	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	859		set __D0main, 35
+0	91	862	#line 91 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	92	862		cmp 3, __D0main, __signed_stack_001main, __D0main
+0	92	866	#line 92 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	93	866		brtst 4, __ASM_Label_593, __D0main
+0	92	869	#line 92 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	93	869		set __D0main, 70
+0	93	872	#line 93 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	94	872	#pragma macro 7
+0	94	872		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4295	895	#line 4295 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	93	895	#line 93 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	94	895	#line 94 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	95	895	#pragma macro 7
+0	95	895		setout __constVal2, 2, __constVal0, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4298	918	#line 4298 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	94	918	#line 94 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	95	918	#line 95 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	96	918		jmp __ASM_Label_596
+0	95	920	#line 95 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	96	920		set __D0main, 90
+0	96	923	#line 96 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	97	923	#pragma macro 7
+0	97	923		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
+0	4306	946	#line 4306 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	96	946	#line 96 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	98	946	#line 98 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	98	946	#line 98 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	98	946	#line 98 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	99	946	#line 99 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	100	946		jmp __ASM_Label_559
+0	99	948	#line 99 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	101	948	#line 101 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	102	948		jmp __ASM_Label_495
+0	101	950	#line 101 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+0	102	950		exit -1, -1
+1	5476	0		setin __constVal1, __ResetSensorPort, 5
+1	5478	4		getin __ResetSensorTmp, __ResetSensorPort, 5
+1	5479	8		brtst 5, __SensorStillInvalid, __ResetSensorTmp
+1	5480	11		subret ____ResetSensorSubroutine_return
+2	102	0	#line 102 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc"
+2	103	0		subret ____initialize_global_data_return
+#CLUMPS
+Clump	Name	Offset	File
+0	main	0	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc
+1	__ResetSensorSubroutine	953	NXTDefs.h
+2	__initialize_global_data	966	C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\touch_grab_if.nxc
