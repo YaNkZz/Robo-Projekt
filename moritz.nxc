@@ -12,12 +12,15 @@ task main()
   SetSensorTouch(IN_1);
   SetSensorLight(IN_2);
   SetSensorLight(IN_3);
-  
-    while(sens_stop==0)
-    {
         int light_value_l = Sensor(IN_3);
         int light_value_r = Sensor(IN_2);
         int sens_stop = Sensor(IN_1);
+
+    while(sens_stop==0)
+    {
+        //int light_value_l = Sensor(IN_3);
+        //int light_value_r = Sensor(IN_2);
+        //int sens_stop = Sensor(IN_1);
         NumOut(45, 30, light_value_l);
         NumOut(0, 0, light_value_r);
         
@@ -40,10 +43,11 @@ task main()
     }                                 //loop out to be broken as soon as sens_stop==1
 
 
-      int light_value_l = Sensor(IN_3);  //redefining values
-      int light_value_r = Sensor(IN_2);
-      int sens_stop = Sensor(IN_1);
+      //int light_value_l = Sensor(IN_3);  //redefining values. Probably not necessary since the are defined in task main
+      //int light_value_r = Sensor(IN_2);
+      //int sens_stop = Sensor(IN_1);
 
+      while(true){
         Off(OUT_BC);                     //stopping motor past touch because loop is stopped
         Wait(200);
         OnRev(OUT_A, 100);
@@ -57,8 +61,9 @@ task main()
         OnRev(OUT_C, 40);
         Wait(turn_time);
         Off(OUT_BC);
-        // break;     I  don't know if break is needed
-        
+        break;     //I  don't know if break is needed
+}
+
         
 /*    while(true)
   {  int sens_stop = Sensor(IN_1);
