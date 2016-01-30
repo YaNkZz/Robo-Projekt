@@ -12,18 +12,17 @@ task main()
   SetSensorTouch(IN_1);
   SetSensorLight(IN_2);
   SetSensorLight(IN_3);
+
+
+    while(true)
+    {
         int light_value_l = Sensor(IN_3);
         int light_value_r = Sensor(IN_2);
         int sens_stop = Sensor(IN_1);
-
-    while(sens_stop!=1)
-    {
-        //int light_value_l = Sensor(IN_3);
-        //int light_value_r = Sensor(IN_2);
-        //int sens_stop = Sensor(IN_1);
         NumOut(45, 30, light_value_l);
         NumOut(0, 0, light_value_r);
-        
+
+        if(sens_stop==0){
         
            if (light_value_l >= WHITE && light_value_r >= WHITE){
               OnFwd(OUT_BC, 50);
@@ -40,6 +39,10 @@ task main()
            else {
               OnFwd(OUT_BC, 50);
         }
+}
+      else if(sens_stop==1){
+          break;
+}
     }                                 //loop out to be broken as soon as sens_stop==1
 
 
