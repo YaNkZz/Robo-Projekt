@@ -16,7 +16,7 @@ task main()
         int light_value_r = Sensor(IN_2);
         int sens_stop = Sensor(IN_1);
 
-    while(sens_stop==0)
+    while(sens_stop!=1)
     {
         //int light_value_l = Sensor(IN_3);
         //int light_value_r = Sensor(IN_2);
@@ -47,7 +47,7 @@ task main()
       //int light_value_r = Sensor(IN_2);
       //int sens_stop = Sensor(IN_1);
 
-      while(true){
+      //while(true){
         Off(OUT_BC);                     //stopping motor past touch because loop is stopped
         Wait(200);
         OnRev(OUT_A, 100);
@@ -61,8 +61,8 @@ task main()
         OnRev(OUT_C, 40);
         Wait(turn_time);
         Off(OUT_BC);
-        break;     //I  don't know if break is needed
-}
+       // break;     //I  don't know if break is needed
+//}
 
         
 /*    while(true)
