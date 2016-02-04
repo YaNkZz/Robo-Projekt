@@ -54,7 +54,7 @@ task main()
         Off(OUT_BC);                     //stopping motor past touch because loop is stopped
         Wait(200);
         OnRev(OUT_A, 100);
-        Wait(time);
+        Wait(time);                      //time is grabbing time
         Off(OUT_A);
         OnRev(OUT_BC, 40);
         Wait(backwards);
