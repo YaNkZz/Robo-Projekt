@@ -216,7 +216,7 @@ Clump	Line	PC	Source
 0	17	174	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	18	174		brtst 4, __ASM_Label_515, __D0main
 0	17	177	#line 17 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	18	177		set __D0main, 90
+0	18	177		set __D0main, 85
 0	18	180	#line 18 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	19	180	#pragma macro 7
 0	19	180		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
@@ -243,7 +243,7 @@ Clump	Line	PC	Source
 0	19	226	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	20	226		brtst 4, __ASM_Label_521, __D0main
 0	19	229	#line 19 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	20	229		set __D0main, 70
+0	20	229		set __D0main, 65
 0	20	232	#line 20 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	21	232	#pragma macro 7
 0	21	232		setout __constVal2, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
@@ -275,7 +275,7 @@ Clump	Line	PC	Source
 0	22	301	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	23	301		brtst 4, __ASM_Label_527, __D0main
 0	22	304	#line 22 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	23	304		set __D0main, 70
+0	23	304		set __D0main, 65
 0	23	307	#line 23 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	24	307	#pragma macro 7
 0	24	307		setout __constVal1, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63
@@ -289,7 +289,7 @@ Clump	Line	PC	Source
 0	25	353	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	26	353		jmp __ASM_Label_530
 0	25	355	#line 25 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
-0	26	355		set __D0main, 90
+0	26	355		set __D0main, 85
 0	26	358	#line 26 "C:\Uni Freiburg Informatik\System Design Project\robo-projekt\trunk\Robo-Code_nxc.nxc"
 0	27	358	#pragma macro 7
 0	27	358		setout __OUT_BC, 2, __D0main, 1, __constVal3, 8, __constVal0, 6, __constVal32, 7, __constVal0, 5, __constVal0, 10, __constVal96, 11, __constVal32, 12, __constVal32, 0, __constVal63

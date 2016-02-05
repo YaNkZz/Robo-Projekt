@@ -4,7 +4,7 @@
 
 #define time 2500
 #define backwards 1000
-#define turn_time 1300
+#define turn_time 1050
 //One turn is 1300! 3700 means 540°
 
 task main()
@@ -13,6 +13,11 @@ task main()
   SetSensorLight(IN_2);
   SetSensorLight(IN_3);
 
+
+    OnFwd(OUT_B, 40);  //(B should be left wheel) This is the turn command
+    OnRev(OUT_C, 40);
+    Wait(turn_time);
+    Off(OUT_BC);
 
     while(true)
     {
@@ -25,19 +30,19 @@ task main()
         if(sens_stop==0){
         
            if (light_value_l >= WHITE && light_value_r >= WHITE){
-              OnFwd(OUT_BC, 50);
+              OnFwd(OUT_BC, 40);
         }
 
            else if (light_value_l >= WHITE && light_value_r <= BLACK) {
-              OnFwd(OUT_C, 30);
+              OnFwd(OUT_C, 20);
               Off(OUT_B);
         }
            else if (light_value_l <= BLACK && light_value_r >= WHITE) {
-              OnFwd(OUT_B, 30);
+              OnFwd(OUT_B, 20);
               Off(OUT_C);
         }
            else {
-              OnFwd(OUT_BC, 50);
+              OnFwd(OUT_BC, 40);
         }
 }
       else if(sens_stop==1){
@@ -70,7 +75,7 @@ task main()
 
 
    // hier ist alles auskommentiert, um oben Fahren und greifen/drehen vereinigen zu können
-   
+   // 85 und 65 als Geschwindigkeiten, um alle Kurven richtig mitzunehmen.
    while(true)
     {
         int light_value_l = Sensor(IN_3);
@@ -83,15 +88,15 @@ task main()
       
         if (light_value_l >= WHITE && light_value_r >= WHITE)
         {
-            OnFwd(OUT_BC, 90);
+            OnFwd(OUT_BC, 85);
         } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
-            OnFwd(OUT_C, 70);
+            OnFwd(OUT_C, 65);
             Off(OUT_B);
         } else if (light_value_l <= BLACK && light_value_r >= WHITE) {
-            OnFwd(OUT_B, 70);
+            OnFwd(OUT_B, 65);
             Off(OUT_C);
         } else {
-            OnFwd(OUT_BC, 90);
+            OnFwd(OUT_BC, 85);
         }
       }
       if(sens_stop==1){
