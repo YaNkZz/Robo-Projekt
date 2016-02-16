@@ -1,11 +1,13 @@
               //Black was 34, White was 34 originally.
 #define BLACK 38
 #define WHITE 39
-#define threshold 30
+#define threshold 35
+
 
 /* Wheels in turns are on 60 */
 task main()
 {
+
     SetSensorLight(IN_2);
     SetSensorLight(IN_3);
     while(true)
@@ -14,12 +16,14 @@ task main()
         int light_value_r = Sensor(IN_2);
         NumOut(45, 30, light_value_l);
         NumOut(0, 0, light_value_r);
+
+
         if (light_value_l >= WHITE && light_value_r >= WHITE){
-           OnFwd(OUT_BC, 85);
+           OnFwd(OUT_BC, 60);
         }
         else if (light_value_l >= WHITE && light_value_r <= BLACK) {
             if(light_value_r < threshold){
-            OnFwd(OUT_C, 65);
+            OnFwd(OUT_C, 70);
             Off(OUT_B);
             }
             else if(light_value_r > threshold){
@@ -30,7 +34,7 @@ task main()
         }
         else if (light_value_l <= BLACK && light_value_r >= WHITE) {
             if(light_value_l < threshold){
-            OnFwd(OUT_B, 65);
+            OnFwd(OUT_B, 70);
             Off(OUT_C);
             }
             else if(light_value_l > threshold){
@@ -39,7 +43,7 @@ task main()
           }
         }
         else {
-            OnFwd(OUT_BC, 85);
+            OnFwd(OUT_BC, 60);
         }
     }
 }

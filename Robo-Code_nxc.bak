@@ -15,15 +15,15 @@ task main()
         NumOut(0, 0, light_value_r);
         if (light_value_l >= WHITE && light_value_r >= WHITE)
         {
-            OnFwd(OUT_BC, 90);
+            OnFwd(OUT_BC, 80);
         } else if (light_value_l >= WHITE && light_value_r <= BLACK) {
-            OnFwd(OUT_C, 70);
+            OnFwd(OUT_C, 60);
             Off(OUT_B);
         } else if (light_value_l <= BLACK && light_value_r >= WHITE) {
-            OnFwd(OUT_B, 70);
+            OnFwd(OUT_B, 60);
             Off(OUT_C);
         } else {
-            OnFwd(OUT_BC, 90);
+            OnFwd(OUT_BC, 80);
         }
     }
 }
